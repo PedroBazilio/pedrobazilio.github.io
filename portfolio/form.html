@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+    <div class="cabecalho">
+        <h1 class="h1">Meu formulario</h1>
+        <p class="p1"><em>Digite o que der na cabeça</em></p>
+        <br>
+    </div>
+    </header>
+
+
+    <form action="" method="GET" class="form">
+       <div class="info">
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="João da Silva">
+            </div>
+
+            <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="1234@abcd">
+            </div>
+        </div>
+      
+
+        <fieldset class="field">
+            <div class="div4">
+             <legend>Qual palavra é mais legal?</legend>
+        
+
+            <label for="op1" class="op">
+                <input type="radio" name="opt" value="Aeropiesotermoterápico">
+                Aeropiesotermoterápico
+            </label>
+        
+            <label for="op2" class="op">
+                <input type="radio" name="opt" value="Coledocoduodenostômico">
+                Coledocoduodenostômico
+            </label>
+       
+            <label for="op3" class="op">
+                <input type="radio" name="opt" value="Coronografopolarímetro">
+                Coronografopolarímetro
+                </label>
+       
+            <label for="op4" class="op">
+                <input type="radio" name="opt" value="Dacriocistossiringotomia">
+                Dacriocistossiringotomia
+            </label>
+            </div>
+        </fieldset>
+          
+            <div class="question" >
+                <label for="plv">
+                    <span>Digite a palavra mais feia que você conhece
+                    </span>
+                    <input type="text" name="plv" placeholder="Palavra feia">
+                </label>
+            </div>
+       
+
+       
+            <div class="range">
+                <label for="range">
+                <span>O quão feliz você está hoje</span>
+                <input type="range" name="range">
+                </label>
+            </div>
+        
+            <div class="cor">
+                <label for="txt">
+                    Escolha a cor do seu humor
+                  
+                    <input type="color" name="cor">
+                </label>
+            </div>
+            
+            <div class="nota">
+                <label for="nota">Nota para a sua vida até agora</label>
+                    <select name="nota" >
+                        <option value="-10000">-10000</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="10000">10000</option>
+                    </select>
+            </div>
+     
+          <button>Clique aqui</button>    
+    </form>
+
+
+</body>
+</html>

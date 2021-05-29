@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #504A4B;
+    background-color: #D3D3D3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+
+    padding: 10px;
+    text-align: center;
+    background-color:#BEBEBE;
+    width: 80%;
+    margin: 40px 0;
+    border-radius: 3%;
+    border: 1px solid #D6D9DC;
+    
+
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+header .p1{
+    font-size: 20px;
+}
+.form{
+    background-color: #BEBEBE;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    
+    width: 80%;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}
+
+
+.nome,
+.email{
+    
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nome input[type='text'],
+.email input[type='email']{
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    
+}
+
+.form label{
+    margin-bottom: 10px;
+}
+
+
+
+.field{
+    border: none;
+    margin-bottom: 40px;
+}
+
+.field legend{
+    margin-bottom: 15px;
+}
+
+.field .op {
+    display: block;
+    font-size: 15px;
+    padding: 0 20px 0 10px;
+  }
+  
+  .form input[type='radio'] {
+    margin-top: 2px;
+  }
+    
+
+.form select{
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;          
+    -webkit-appearance: none; 
+}
+
+
+.form button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+  .form button:hover {
+    background-color: #76AEED;
+  }
+  
+  .form button:active {
+    background-color: #407FC7;
+  }
+
+
+.question{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question input[type="text"]{
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.range,
+.cor{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.range input[type="range"]{
+    width: 150px;
+
+}
+
+@media only screen and (min-width:700px){
+
+    header,
+    .form{
+        width: 600px;
+    }
+
+    .nome,
+    .email{
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .form input[type="text"],
+    .form input[type="email"],
+    .form select,
+    .form textarea{
+        width: 250px;
+        height: initial;
+        
+    }
+
+    .info label{
+        text-align: left;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+
+    }
+
+    .form input[type="text"]:invalid,
+    .form input[type="email"]:invalid{
+        border: 1px solid #D55C5F;
+        color: #D55C5F;
+    }
+
+    .field{
+        margin-bottom: 10px;
+    }
+
+    .field legend{
+        width: 250px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+
+
+}
